@@ -1,0 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+    קבוע כפתור = document.getElementById('clickBtn');
+    קבוע הודעה = document.getElementById('message');
+    
+    כפתור.addEventListener('click', () => {
+        הודעה.textContent = 'כל הכבוד! האתר עובד מצוין! 🎉';
+        הודעה.style.animation = 'fadeIn 0.5s';
+    });
+});
