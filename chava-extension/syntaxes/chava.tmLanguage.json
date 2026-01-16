@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ChavaScript",
+  "patterns": [
+    {
+      "include": "source.js"
+    }
+  ],
+  "scopeName": "source.chava",
+  "fileTypes": [
+    "chava",
+    "chjs"
+  ]
+}

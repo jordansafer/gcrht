@@ -1,0 +1,56 @@
+{
+  "name": "chava-script-rtl",
+  "displayName": "ChavaScript RTL Support",
+  "description": "כפיית RTL עבור קבצי ChavaScript",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "main": "./extension.js",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "chava",
+        "aliases": [
+          "ChavaScript",
+          "chava"
+        ],
+        "extensions": [
+          ".chava",
+          ".chjs"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "chava",
+        "scopeName": "source.chava",
+        "path": "./syntaxes/chava.tmLanguage.json"
+      }
+    ],
+    "configuration": {
+      "title": "ChavaScript",
+      "properties": {
+        "[chava]": {
+          "type": "object",
+          "default": {
+            "editor.direction": "rtl"
+          },
+          "description": "הגדרות עבור קבצי ChavaScript"
+        }
+      }
+    },
+    "configurationDefaults": {
+      "[chava]": {
+        "editor.direction": "rtl"
+      }
+    }
+  },
+  "activationEvents": [
+    "onLanguage:chava"
+  ]
+}

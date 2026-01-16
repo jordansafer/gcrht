@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "*.chava": "chava",
+    "*.chjs": "chava"
+  },
+  "[chava]": {
+    "editor.direction": "rtl",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always"
+  },
+  "[javascript]": {
+    "editor.direction": "ltr"
+  },
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.wordWrap": "off"
+}
